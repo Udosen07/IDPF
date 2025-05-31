@@ -143,7 +143,7 @@ const NavBar = () => {
                 Skills
               </a>
               <a
-                to="#projects"
+                href="#projects"
                 className="text-black dark:text-white text-base "
                 onClick={handleClose}
               >
