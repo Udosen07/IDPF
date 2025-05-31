@@ -2,10 +2,15 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Code, Calendar, Users } from "lucide-react";
 import { projectsData } from "../data/projects";
+import { useEffect } from "react";
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const project = projectsData.find((p) => p.id === projectId);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!project) {
     return (
@@ -148,9 +153,9 @@ const ProjectDetail = () => {
 
                 {/* Action Buttons */}
                 <div className="space-y-3">
-                  {project.link && (
+                  {project.live && (
                     <a
-                      href={project.link}
+                      href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-xl"
@@ -173,40 +178,8 @@ const ProjectDetail = () => {
                   )}
                 </div>
               </div>
-
-              {/* Additional Info Card */}
-              {project.features && (
-                <motion.div
-                  variants={itemVariants}
-                  className="dark:bg-darkBgExp bg-white rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-800"
-                >
-                  <h3 className="font-semibold mb-3 flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    Key Features
-                  </h3>
-                  <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                    {project.features.map((feature, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              )}
             </motion.div>
           </div>
-
-          {/* Bottom Navigation */}
-          <motion.div variants={itemVariants} className="mt-16 text-center">
-            <Link
-              to="/#projects"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gray-100 dark:bg-gray-800 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-105"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Explore More Projects
-            </Link>
-          </motion.div>
         </motion.div>
       </div>
     </div>

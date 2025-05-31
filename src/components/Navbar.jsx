@@ -39,8 +39,8 @@ const NavBar = () => {
   const handleDownload = () => {
     // Create a link element
     const link = document.createElement("a");
-    link.href = "/assets/Udosen, David CV.pdf"; // Replace this with the actual path to your CV file
-    link.download = "Udosen, David CV.pdf"; // Specify the name of the downloaded file
+    link.href = "/assets/cv.pdf"; // Replace this with the actual path to your CV file
+    link.download = "Ukonu, Idika CV.pdf"; // Specify the name of the downloaded file
     document.body.appendChild(link); // Append the link to the document body
     link.click(); // Programmatically click the link to trigger download
     document.body.removeChild(link); // Clean up by removing the link from the document
@@ -51,7 +51,7 @@ const NavBar = () => {
       <div className="flex items-center justify-between px-6 py-4 md:px-20 md:py-6">
         <a href="/">
           <div className="text-black dark:text-white text-2xl font-bold dancing-script">
-            David
+            Ukonu
           </div>
         </a>
         <div className="hidden md:flex space-x-6 items-center lg:text-[16px] md:text-[15px] text-[12px] font-semibold text-black">
@@ -83,13 +83,7 @@ const NavBar = () => {
           >
             Projects
           </a>
-          <a
-            href="#contact"
-            className="text-black dark:text-white text-xl "
-            onClick={handleClose}
-          >
-            Contact
-          </a>
+       
           <div className="border-l-2 border-w h-6 dark:border-white border-black "></div>
           <div
             className="text-black dark:text-white text-2xl"

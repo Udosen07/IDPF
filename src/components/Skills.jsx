@@ -40,38 +40,38 @@ const Skills = () => {
         <div className="flex flex-col items-center w-28">
           <div className="w-12 h-12">
             <img
-              src="/assets/react.png"
+              src="/assets/figma.png"
               className="w-full h-full object-contain"
             />
           </div>
-          <p className=" text-base font-bold">React Native</p>
+          <p className=" text-base font-bold">Figma</p>
         </div>
         <div className="flex flex-col items-center w-28">
           <div className="w-12 h-12">
             <img
-              src="/assets/nextjs.png"
+              src="/assets/html.png"
               className="w-full h-full object-contain"
             />
           </div>
-          <p className=" text-base font-bold">Next JS</p>
+          <p className=" text-base font-bold">HTML5</p>
         </div>
         <div className="flex flex-col items-center w-28">
           <div className="w-12 h-12">
             <img
-              src="/assets/vue.png"
+              src="/assets/css.png"
               className="w-full h-full object-contain"
             />
           </div>
-          <p className=" text-base font-bold">Vue JS</p>
+          <p className=" text-base font-bold">CSS</p>
         </div>
         <div className="flex flex-col items-center w-28">
           <div className="w-12 h-12">
             <img
-              src="/assets/tailwind.png"
+              src="/assets/bootstrap.png"
               className="w-full h-full object-contain"
             />
           </div>
-          <p className=" text-base font-bold">Tailwind CSS</p>
+          <p className=" text-base font-bold">Bootstrap</p>
         </div>
         <div className="flex flex-col items-center w-28">
           <div className="w-12 h-12">

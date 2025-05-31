@@ -12,41 +12,41 @@ const Hero = () => {
     >
       <div>
         <h1 className="text-black dark:text-textColor text-3xl font-bold">
-          Hi I'm David 👋
+          Hi I'm Ukonu 👋
         </h1>
         <p className="text-black dark:text-textColor mt-5 text-xl">
-          As a frontend developer, I am dedicated to creating fast, accessible,
-          and visually engaging web applications that are fully responsive
-          across all devices. My focus is on delivering seamless digital
-          experiences that merge optimal performance with exceptional design
-          standards. With a strong foundation in frontend technologies and a
-          passion that has grown throughout my career, I consistently strive for
-          innovation and excellence in building intuitive, user-centric
-          interfaces.
+          As a frontend developer, I specialize in crafting high-performance,
+          accessible, and visually compelling web applications that adapt
+          flawlessly to any device. My goal is to build smooth, engaging digital
+          experiences where top-tier functionality meets elegant design. With
+          deep expertise in frontend technologies and a career-long passion for
+          development, I am committed to pushing boundaries delivering
+          intuitive, user-focused interfaces that excel in both form and
+          function.
         </p>
         <p className="flex gap-2 items-center mt-5 text-black dark:text-textColor text-xl">
-          <TiLocation /> Lagos, Nigeria
+          <TiLocation /> Drammen, Norway
         </p>
         <div className="flex gap-5 items-center text-2xl mt-5 text-black dark:text-textColor">
-          <a href="mailto:udosendavid@outlook.com" target="_blank">
+          <a href="mailto:ukonu.idika@yahoo.com" target="_blank">
             <div>
               <IoMdMail />
             </div>
           </a>
           <a
-            href="https://www.linkedin.com/in/david-udosen-8b63962a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            href="https://www.linkedin.com/in/ukonu-idika-367a00254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             target="_blank"
           >
             <div>
               <FaLinkedin />
             </div>
           </a>
-          <a href="https://github.com/Udosen07" target="_blank">
+          <a href="https://github.com/ukonuidika" target="_blank">
             <div>
               <FaGithub />
             </div>
           </a>
-          <a href="https://twitter.com/damon00829398" target="_blank">
+          <a href="https://twitter.com/UIdika61267" target="_blank">
             <div>
               <FaSquareXTwitter />
             </div>
@@ -62,7 +62,7 @@ const Hero = () => {
       >
         <div className="w-full h-full">
           <img
-            src="/assets/Udosen.jpg"
+            src="/assets/ukonu.jpg"
             className="w-full md:h-[300px] h-[400px] object-contain"
           />
         </div>

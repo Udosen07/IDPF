@@ -1,5 +1,4 @@
 import About from "../components/About";
-import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import NavBar from "../components/Navbar";
@@ -14,7 +13,7 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      
       <Footer />
     </div>
   );
