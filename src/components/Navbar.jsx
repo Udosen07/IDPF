@@ -149,13 +149,7 @@ const NavBar = () => {
               >
                 Projects
               </a>
-              <a
-                to="#contact"
-                className="text-black dark:text-white text-base "
-                onClick={handleClose}
-              >
-                Contact
-              </a>
+             
               <hr />
               <div className=" text-black dark:text-white text-base flex justify-between items-center">
                 <p>Switch Theme</p>
